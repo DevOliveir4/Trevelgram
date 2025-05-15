@@ -1,0 +1,18 @@
+footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 26px 32px;
+    font: var(--font-sm);
+
+    & ul {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        
+        & li:nth-child(1) {
+            margin-right: 20px;
+        }
+    }
+}

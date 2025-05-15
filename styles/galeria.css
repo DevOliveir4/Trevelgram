@@ -1,0 +1,20 @@
+section {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(auto-fit, minmax(286px, 1fr));
+    padding: 24px 32px;
+
+    & img {
+        width: 100%;
+        height: auto;
+        display: block;
+        max-width: 100%; /* Deixa crescer até o limite da coluna */
+        border-radius: 2px;
+    }
+}
+
+@media (max-width: 375px) {
+    section {
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+}
